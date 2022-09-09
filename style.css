@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+
+.to-do-wraper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(69, 104, 220), rgb(176, 106, 179));
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 1em;
+}
+
+.to-do-head{
+    height: 60px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 8px 10px #0000000e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+}
+
+.to-do-head form input{
+    height: 40px;
+    border-style: none;
+    outline-style: none;
+    background-color: rgb(212, 212, 212);
+    padding: 10px 14px;
+    font-size: 1.3rem;
+    margin: 0px;
+    border-radius: 8px;
+    margin-right: 4px;
+    color: rgb(32, 32, 32);
+}
+
+.to-do-head form input:focus{
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0px 1px 4px #00000074;
+}
+
+.to-do-head form button{
+    height: 40px;
+    border-style: none;
+    outline-style: none;
+    background-color: rgb(32, 32, 32);
+    font-size: 1.3rem;
+    line-height: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #ffffff;
+    margin: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.to-do-head form button:active{
+    background-color: rgb(31, 175, 118);
+}
+
+.to-do-status-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.to-do-status-wraper .status-box{
+    width: 100%;
+    margin: 0px 8px;
+    padding: 0.6em;
+    background-color: #f0f0f0;
+    box-shadow: 0px 8px 10px #0000000e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.to-do-status-wraper .status-box h2{
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    margin-bottom: 0.6rem;
+}
+
+.to-do-status-wraper .status-box .task-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px #00000039;
+    border-radius: 4px;
+    padding: 0.6em;
+}
+
+.to-do-status-wraper .status-box .task-box input{
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.to-do-status-wraper .status-box .task-box p{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    line-height: 20px;
+}
+
+.to-do-status-wraper .status-box .task-box .d-btn-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-status-wraper .status-box .task-box .d-btn-wraper button{
+    height: 30px;
+    width: 30px;
+    /* background-color: #e35555; */
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-style: none;
+    outline-style: none;
+    /* box-shadow: 0px 1px 2px #00000034; */
+}
+
+.to-do-status-wraper .status-box .task-box button p{
+    display: block;
+    color: rgb(32, 32, 32);
+}
