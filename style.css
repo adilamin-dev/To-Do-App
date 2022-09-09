@@ -78,12 +78,15 @@
 
 .to-do-status-wraper .status-box{
     width: 100%;
-    margin: 0px 8px;
     padding: 0.6em;
     background-color: #f0f0f0;
     box-shadow: 0px 8px 10px #0000000e;
     border-radius: 10px;
     text-align: center;
+}
+
+.to-do-status-wraper .status-box-2{
+    margin: 0px 10px;
 }
 
 .to-do-status-wraper .status-box h2{
@@ -101,11 +104,28 @@
     padding: 0.6em;
 }
 
+.to-do-status-wraper .status-box-1 .task-box{
+    transition: all 0.3s ease-in;
+}
+
+.to-do-status-wraper .status-box-1 .task-box:hover{
+    background-color: #fff5cb;
+}
+
+.to-do-status-wraper .status-box-2 .task-box{
+    transition: all 0.3s ease-in;
+}
+
+.to-do-status-wraper .status-box-2 .task-box:hover{
+    background-color: #cbffdf;
+}
+
 .to-do-status-wraper .status-box .task-box input{
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-style: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .to-do-status-wraper .status-box .task-box p{
@@ -124,13 +144,12 @@
 }
 
 .to-do-status-wraper .status-box .task-box .d-btn-wraper button{
-    height: 30px;
-    width: 30px;
-    /* background-color: #e35555; */
-    background-color: #d6d6d6;
+    height: 26px;
+    width: 26px;
+    background-color: #b7b7b7;
     border-radius: 50%;
     padding: 0px;
-    line-height: 30px;
+    line-height: 26px;
     display: block;
     text-align: center;
     display: flex;
@@ -140,10 +159,17 @@
     font-weight: 400;
     border-style: none;
     outline-style: none;
-    /* box-shadow: 0px 1px 2px #00000034; */
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.to-do-status-wraper .status-box .task-box .d-btn-wraper button:hover{
+    background-color: #e35555;
+    box-shadow: 0px 1px 2px #00000034;
+    transform: rotate(360deg);
 }
 
 .to-do-status-wraper .status-box .task-box button p{
     display: block;
-    color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
 }
