@@ -72,7 +72,7 @@
 .to-do-status-wraper{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
@@ -89,19 +89,24 @@
     margin: 0px 10px;
 }
 
+.to-do-status-wraper .status-box-3 .task-box input{
+    display:  none;
+}
+
 .to-do-status-wraper .status-box h2{
     font-weight: 600;
     color: rgb(32, 32, 32);
-    margin-bottom: 0.6rem;
 }
 
 .to-do-status-wraper .status-box .task-box{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 1px 4px #00000039;
     border-radius: 4px;
     padding: 0.6em;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .to-do-status-wraper .status-box-1 .task-box{
@@ -121,11 +126,12 @@
 }
 
 .to-do-status-wraper .status-box .task-box input{
-    height: 36px;
-    width: 36px;
+    height: 20px;
+    width: 20px;
     border-style: none;
     border-radius: 20px;
     cursor: pointer;
+    margin-right: 4px;
 }
 
 .to-do-status-wraper .status-box .task-box p{
@@ -144,12 +150,12 @@
 }
 
 .to-do-status-wraper .status-box .task-box .d-btn-wraper button{
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     background-color: #b7b7b7;
     border-radius: 50%;
     padding: 0px;
-    line-height: 26px;
+    line-height: 24px;
     display: block;
     text-align: center;
     display: flex;
